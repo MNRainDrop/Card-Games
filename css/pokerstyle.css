@@ -2,14 +2,13 @@
     background-color: lightcyan;
     font-family: 'Merriweather', serif;
     width: 50rem;
-    padding:1rem;
+    padding: 1rem;
     margin: 1rem auto;
     border-radius: .5rem;
     display: grid;
-    grid-template-columns: repeat(2,4rem);
-    grid-template-rows: 7rem 2rem 7rem;
+    grid-template-columns: repeat(6, 4rem);
+    grid-template-rows: 7rem 7rem 2rem 7rem 2rem;
     gap: .5rem;
-    cursor: pointer;
     justify-content: center;
     padding-top: 1rem;
 }
@@ -21,8 +20,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
     font-size: 3rem;
     border-radius: 0.5rem;
-    color: white;
+    color: black;
+}
+
+.community-deck {
+    grid-row-start: 2;
+    background-color: red;
+}
+.community-cards {
+    grid-row-start: 2;
+}
+.button {
+    grid-row-start: 3;
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     user-select: none;
+}
+.player {
+    grid-row-start: 4;
+}
+.text{
+    grid-row-start: 5;
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+
+.cards{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: 4rem;
+}
+
+
+.deck:hover{
+    cursor: grab;
 }
