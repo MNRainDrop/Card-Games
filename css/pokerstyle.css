@@ -1,0 +1,28 @@
+.game {
+    background-color: lightcyan;
+    font-family: 'Merriweather', serif;
+    width: 50rem;
+    padding:1rem;
+    margin: 1rem auto;
+    border-radius: .5rem;
+    display: grid;
+    grid-template-columns: repeat(2,4rem);
+    grid-template-rows: 7rem 2rem 7rem;
+    gap: .5rem;
+    cursor: pointer;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.deck {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-radius: 0.5rem;
+    color: white;
+    user-select: none;
+}

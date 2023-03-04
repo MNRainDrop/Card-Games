@@ -3,7 +3,16 @@ body{
     font-family: 'Merriweather', serif;
 }
 
-.box{
+a{
+    color: black;
+    padding: 1rem;
+}
+
+a:hover{
+    color: blue;
+}
+
+.navbox{
     background-color: white;
     border-radius: 0.5rem;
     width: 50rem;

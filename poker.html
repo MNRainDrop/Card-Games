@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>War</title>
-
+    <title>Poker</title>
+    
     <!-- CSS -->
     <link rel="stylesheet" href="./css/indexstyle.css">
-    <link rel="stylesheet" href="./css/warstyle.css">
+    <link rel="stylesheet" href="./css/pokerstyle.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     
     <!-- Script -->
-    <script src="./javascript/war.js" type="module"></script>
+    <script src="./javascript/poker.js" type="module"></script>
 </head>
 <body>
     <div class="navbox">
@@ -30,14 +30,20 @@
             Poker
         </a>
     </div>
-    
+
     <div class="game">
-        <div class="computer-deck deck"></div>
-        <div class="computer-card-slot card-slot"></div>
+        <div class="top">
+            <div class="dealer cards"></div>
+        </div>
+        <div class="middle">
+            <div class="community deck"></div>
+            <div class="community cards"></div>
+            <button class="event"></button>
+        </div>
+        <div class="bottom">
+            <div class="player cards"></div>
+        </div>
         <div class="text"></div>
-        <div class="player-deck deck"></div>
-        <div class="player-card-slot card-slot"></div>
     </div>
-    
 </body>
 </html>
